@@ -25,12 +25,21 @@ repositories {
 
 
 dependencies {
+	compileOnly('org.projectlombok:lombok')
+	
 	implementation('org.springframework.boot:spring-boot-starter-actuator')
+	implementation('org.springframework.boot:spring-boot-starter-data-jpa')
 	implementation('org.springframework.boot:spring-boot-starter-data-elasticsearch')
-	// implementation('org.springframework.boot:spring-boot-starter-security')
+	implementation('com.fasterxml.jackson.core:jackson-core')
+	implementation('com.fasterxml.jackson.core:jackson-databind')
 	implementation('org.springframework.boot:spring-boot-starter-web')
+	
+	// implementation('org.springframework.boot:spring-boot-starter-security')
+	
 	runtimeOnly('org.springframework.boot:spring-boot-devtools')
 	runtimeOnly('mysql:mysql-connector-java')
+	runtimeOnly('com.h2database:h2')
+	
 	testImplementation('org.springframework.boot:spring-boot-starter-test')
 	testImplementation('org.springframework.security:spring-security-test')
 }
