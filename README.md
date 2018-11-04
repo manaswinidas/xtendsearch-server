@@ -19,9 +19,11 @@ a little more manual effort.
 
 ### Running the project
 
-Make sure you have Elastic Search running on port 9200 & 9300 on `localhost`
+Copy `application.properties.dist` to `application.properties` and make necessary changes.
 
-The easiest way is to get docker and launch elasticsearch with 
+Make sure you have Elastic Search running on port 9200 & 9300 on `localhost`.
+
+The easiest way is to get docker and launch elasticsearch with:
 
 ```
 docker run -p 9200:9200 -p 9300:9300 elasticsearch:6.4.2
